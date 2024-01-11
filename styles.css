@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background-color: #D8DA3D;
+    color: #80007E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar {
+    margin-top: 50px;
+    width: 10%;
+    height: 100vh;
+    background-color: #D8DA3D;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    text-align-last:left;
+}
+.box::after { /*This class helps to add items after box*/
+    content:"";
+    position: absolute;
+    bottom: 100;
+    right: 1345px;
+    height: 30px;
+    width: 15px;
+    background-color: black;
+}
+
+.content { 
+    margin-left: 15%;
+    padding: 20px;
+}
+.p small { /*This class is used to decrease the space between lines*/
+    line-height: 1;
+}
+hr {
+    border: 1px dashed #80007E;
+}
